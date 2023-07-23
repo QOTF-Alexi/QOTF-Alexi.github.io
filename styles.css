@@ -18,7 +18,7 @@ pre {
   color: #b6f0f2;
   font-family: Arial;
   font-size: 100%;
-  width: 100%;
+  text-size-adjust: auto;
 }
 
 a:link {
