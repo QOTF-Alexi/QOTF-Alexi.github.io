@@ -18,6 +18,7 @@ pre {
   color: #b6f0f2;
   font-family: Arial;
   font-size: 100%;
+  overflow-wrap: break-word;
 }
 
 a:link {
