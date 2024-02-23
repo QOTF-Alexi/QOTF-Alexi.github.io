@@ -1,6 +1,9 @@
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/bkg2.jpg');
 }
+trbody {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/bkg.jpg');
+}
 h1 {
   color: white; 
   font-family: arial
