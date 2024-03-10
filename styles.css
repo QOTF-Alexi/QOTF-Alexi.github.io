@@ -14,11 +14,12 @@ h3 {
   font-family: Helvetica;
 }
 
-pre {
+p {
   color: #b6f0f2;
   font-family: Arial;
   font-size: 100%;
   text-wrap: wrap;
+  margin-right: 5%;
 }
 
 a:link {
@@ -43,13 +44,4 @@ a:active {
   color: blue;
   background-color: transparent;
   text-decoration: none;
-}
-
-aside {
-  width: 30%;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: right;
-  color: lightgrey;
-  background-color: black;
 }
