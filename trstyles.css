@@ -2,20 +2,21 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/bkg.jpg');
 }
 h1 {
-  color: white; 
+  color: rgb(208, 200, 230)/*white*/;
   font-family: arial
 }
 h2 {
-  color: whitesmoke; 
+  color: rgb(228, 213, 188)/*whitesmoke*/;
   font-family: arial
 }
 h3 {
-  color: whitesmoke;
+
+  color: rgb(241, 242, 238)/*whitesmoke*/;
   font-family: Helvetica;
 }
 
 p {
-  color: #b6f0f2;
+  color: rgb(208, 200, 230)/*#b6f0f2*/;
   font-family: Arial;
   font-size: 100%;
   text-wrap: wrap;
@@ -23,25 +24,25 @@ p {
 }
 
 a:link {
-  color: #22a3ce;
+  color: rgb(195, 124, 179)/*#22a3ce*/;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:visited {
-  color: powderblue;
+  color: rgb(219, 163, 206)/*powderblue*/;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: blue;
+  color: rgb(231, 194, 222)/*blue*/;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: blue;
+  color: rgb(231, 194, 222)/*blue*/;
   background-color: transparent;
   text-decoration: none;
 }
