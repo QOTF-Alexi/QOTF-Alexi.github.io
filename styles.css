@@ -1,23 +1,22 @@
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/bkg2.jpg');
   margin:40px auto;
-  max-width:870px;
+  max-width:950px;
   line-height:1.6;
   font-size:18px;
-  padding:0 10px;
 }
 h1 {
-  line-height:1.2
+  line-height:1.2;
   color: rgb(208, 200, 230)/*white*/;
-  font-family: arial
+  font-family: arial;
 }
 h2 {
-  line-height:1.2
+  line-height:1.2;
   color: rgb(228, 213, 188)/*whitesmoke*/;
-  font-family: arial
+  font-family: arial;
 }
 h3 {
-  line-height:1.2
+  line-height:1.2;
   color: rgb(241, 242, 238)/*whitesmoke*/;
   font-family: Helvetica;
 }
@@ -27,7 +26,6 @@ p {
   font-family: Arial;
   font-size: 100%;
   text-wrap: wrap;
-  margin-right: 5%;
 }
 
 a:link {
