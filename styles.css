@@ -28,6 +28,13 @@ p {
   text-wrap: wrap;
 }
 
+li {
+  color: rgb(208, 200, 230)/*#b6f0f2*/;
+  font-family: Arial;
+  font-size: 100%;
+  text-wrap: wrap;
+}
+
 a:link {
   color: rgb(195, 124, 179)/*#22a3ce*/;
   background-color: transparent;
