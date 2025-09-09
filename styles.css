@@ -1,4 +1,4 @@
-body {
+.defaultbody {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/bkg2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -7,6 +7,16 @@ body {
   line-height:1.6;
   font-size:18px;
 }
+.trbody {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/bkg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin:40px auto;
+  max-width:950px;
+  line-height:1.6;
+  font-size:18px;
+}
+
 h1 {
   line-height:1.2;
   color: rgb(208, 200, 230)/*white*/;
@@ -31,6 +41,13 @@ p {
 }
 
 li {
+  color: rgb(208, 200, 230)/*#b6f0f2*/;
+  font-family: Arial;
+  font-size: 100%;
+  text-wrap: wrap;
+}
+
+summary {
   color: rgb(208, 200, 230)/*#b6f0f2*/;
   font-family: Arial;
   font-size: 100%;
