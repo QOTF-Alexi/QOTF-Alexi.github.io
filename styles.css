@@ -6,6 +6,7 @@
   max-width:950px;
   line-height:1.6;
   font-size:18px;
+  text-shadow: -2px 1px 5px #313131;
 }
 .trbody {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/bkg.jpg');
@@ -77,3 +78,4 @@ a:active {
   background-color: transparent;
   text-decoration: none;
 }
+
