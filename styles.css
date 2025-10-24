@@ -16,6 +16,7 @@
   max-width:950px;
   line-height:1.6;
   font-size:18px;
+  text-shadow: -2px 1px 5px #313131;
 }
 
 h1 {
@@ -78,4 +79,5 @@ a:active {
   background-color: transparent;
   text-decoration: none;
 }
+
 
