@@ -38,8 +38,7 @@
         I have a completely custom-built computer (yes, that includes the case), which has a 386. This hardware is
         basically unusable, even in retro terms.
         It can barely run Windows 95, and most DOS games will not run thanks to the abysmal Trident video adapter. But
-        it
-        does give us the opportunity to peek at how things used to be for general computing stuff.
+        it does give us the opportunity to peek at how things used to be for general computing stuff.
         That's why I decided to install a super irrelevant OS, namely OS/2 Warp. Specifically, version 3, because it's
         the last that can run on a 386.
         <br>
@@ -57,8 +56,7 @@
         seems like the entire system, with all optional components, fits on 35 MB of space.
         <br>
         I have it all set up now, and it's a tad slow. I suspect that might be due to the 4MB of RAM I have available,
-        as the CPU
-        seems to be doing nothing.
+        as the CPU seems to be doing nothing.
         The specs of this machine barely meet <a
             href="https://www.os2world.com/wiki/index.php/IBM_OS/2_Warp_3#Key_Prerequisites">the minimum requirements
         for OS/2 Warp 3</a>. At least there's a math coprocessor in the Am386DX-40...
@@ -80,23 +78,19 @@
         I recently acquired a Squeezebox Duet (which consists of a controller and a receiver), thanks to a video from
         F4mi on YouTube.
         Sadly, the scroll wheel of the controller would get stuck sometimes, so I decided to give it a clean. From what
-        I
-        can tell, you don't have to disassemble the controller to remove the scroll wheel.
+        I can tell, you don't have to disassemble the controller to remove the scroll wheel.
         I did that anyway, which is not advisable as the screw posts are feeble and the display will be bare for
         a while.
         The scroll wheel is friction fit onto the motherboard and has a tiny part inside for the centre button. This
-        will
-        either come flying out or stay inside the controller.
+        will either come flying out or stay inside the controller.
         This little bit goes in with the nub facing up. Anyway, all I did was clean the insides of the
         scroll wheel, added some graphite pencil to the graphite pads (they were quite faded) and applied a little dab
-        of
-        Magnalube.
+        of Magnalube.
         After all that, it now works like new again!
         <br>
         Y no pix? Cuz I forgot to take them, soz. If you have any, make an issue on <a
             href="https://github.com/QOTF-Alexi/QOTF-Alexi.github.io">the GitHub repo</a> of this page, and I'll add
-        them
-        in!
+        them in!
     </p>
 </div>
 
@@ -118,9 +112,7 @@
             The following project involves HIGH VOLTAGE. It can be lethal if proper precautions are not taken. These
             displays are in an unknown state until you power it on.
             This project is done AT YOUR OWN RISK! Do not come crying to me if you burned down your house or got
-            shocked. I
-            only kinda sorta know what I am doing.
-            I know this much:<br>
+            shocked. I only kinda sorta know what I am doing. I know this much:<br>
         </p>
         <ul>
             <li>UNPLUG FROM THE WALL if you need to do something with or near the wires.</li>
@@ -132,8 +124,7 @@
             </li>
             <li>KEEP A CLEAN WORKSPACE. stray wires or metal tools will destroy things.</li>
             <li>SEPARATE V-, V+ AND EARTH FROM EACH OTHER. If these touch, you will most likely set fire to your house,
-                pop
-                a breaker, or pop a fuse.
+                pop a breaker, or pop a fuse.
             </li>
         </ul>
         <p>
@@ -150,23 +141,19 @@
             It requires between 77 and 137.5 volt DC, at around 0.5–1 amp to operate. For this, I am using two Mean Well
             DRP-240-48 power supplies connected in series to get 96VDC.
             If you wish to do the same, get power supplies with isolated V- (it must not be connected to earth). You can
-            get
-            some for around 55 euros each. Make sure they also have overcurrent protection.
+            get some for around 55 euros each. Make sure they also have overcurrent protection.
             Alternatively, you could use a variac and rectify the output. Or just get a 100VDC power supply instead, but
             those are expensive.
             <br>
             Assuming you got it with the Harting connector and a bit of cable, hooking it up is not too difficult. The
-            power
-            wires are both unfortunately black. Use a continuity tester to find the V+ wire.
+            power wires are both unfortunately black. Use a continuity tester to find the V+ wire.
             Use the pinout as listed <a
                 href="https://codeberg.org/shiz/focon-util/src/branch/main/docs/ns-icmm.md">here</a>
             or <a href="https://revspace.nl/Treinonderdelen/ICMm/Bestemmingsaanduiding#Connectors">here</a>.
-            Both of these should be correct. Mark the V+ wire with a small piece of tape. Hook the wires up to your
-            power
-            supply, optionally with a decent extra wire and Wago connectors, if the cable is too short.
+            Both of these should be correct. Mark the V+ wire with a small piece of tape. Hook the V- and V+ wires up to
+            your power supply, optionally with a decent extra wire and Wago connectors, if the cable is too short.
             Also REMEMBER TO CONNECT THE EARTH WIRE TO THE CHASSIS GROUND OF THE POWER SUPPLY! (So please, for the love
-            of
-            god, not to V-).
+            of god, not to V-).
         </p>
         <h3>Connecting an RS485 interface</h3>
         <p>
@@ -175,11 +162,9 @@
             RS485 is an industrial serial protocol, used for connecting devices in a larger structure, like a train.
             Everyone implements it a little differently, but the wiring is the same.
             Unless you are rich, and you have a Field PG or similar industrial laptop, you will need to buy a dongle. It
-            can
-            be basically any RS485 dongle, but I had good luck with the Waveshare RS485(B) dongle.
+            can be basically any RS485 dongle, but I had good luck with the Waveshare RS485(B) dongle.
             They can be had for relatively cheap, around 10–20 euros. The Harting connector also has a cable, which has
-            a
-            sleeve (ground) and two wires, a red one and a blue one.
+            a sleeve (ground) and two wires, a red one and a blue one.
             For my Waveshare, the red one connects to A+, and the blue one goes to B-.
         </p>
         <h3>Installing software</h3>
@@ -207,17 +192,14 @@
             writing, so you could say they're pretty damn uncommon.
             Done checking? Okay, go ahead, plug it in. First the USB dongle, then the power. Nothing should happen.<br>
             Go to the device manager or whatever and note the COM port number of your dongle. It should be something
-            like
-            COM3 or COM4.
+            like COM3 or COM4.
             In your terminal, run <code>focon-util -d COM* display info</code> where the * is the COM port number. If it
             works, you should see a bunch of text in the terminal.
             If nothing happens, you either misconnected something, or the display has a different ID. Refer to the docs
-            of
-            the software for more information.<br>
+            of the software for more information.<br>
             Let's see if the LED matrix actually works. Run <code>focon-util -d COM* display selftest info</code> and
-            watch
-            the display. It should start throwing some text on the screen, followed by a bar that scrolls from right to
-            left.<br>
+            watch the display. It should start throwing some text on the screen, followed by a bar that scrolls from
+            right to left.<br>
             To exit the selftest, run <code>focon-util -d COM* display selftest abort</code>
         </p>
         <h3>Let's have some fun!</h3>
@@ -236,11 +218,10 @@
             <img src="assets/icm/icmshlviashl.JPG" alt="ICM display showing a two-line destination"
                  style="float:right;width:33%;height:auto;margin-left:1%;">
             Yes, the aeroplane emoji works. You might also notice a nasty square on your bottom row now. This is a bug.
-            You
-            can pad the "via Schiphol ✈️" part with spaces so it goes away.<br>
+            You can pad the "via Schiphol ✈️" part with spaces so it goes away.<br>
             By default, the object ID is set to 255, but you can assign one by appending <code>-i *</code> where * is
-            the ID
-            you want to use. You can then reuse this object with <code>focon-util -d COM* display redraw *</code><br>
+            the ID you want to use.
+            You can then reuse this object with <code>focon-util -d COM* display redraw *</code><br>
             There is a lot of stuff to play with. Read the docs, play around, and have fun!
         </p>
         <h4>Draw some images!</h4>
@@ -250,8 +231,8 @@
             You can fit 160x32 or smaller images on the display. My recommendation is to keep them simple. Use high
             contrast, preferably only black and white. The script can do shading, but it looks awful up close.<br>
             You can draw the image using <code>focon-util -d COM* display draw path/to/image.xxx</code> and it supports
-            PNG
-            and JPEG and probably other formats too. Effects with the <code>-T</code> flag work, but alignment does not.
+            PNG and JPEG and probably other formats too.
+            Effects with the <code>-T</code> flag work, but alignment does not.
             As long as the image falls within the borders of the display, you can position it with coordinates using
             <code>-x
                 * -y *</code> flags.<br>
@@ -266,17 +247,13 @@
         </video>
         <p>
             If you followed this guide, hopefully you now have a working display. If you do, congratulations! If not,
-            please
-            don't be discouraged. I'm sure you'll figure it out.<br>
+            please don't be discouraged. I'm sure you'll figure it out.<br>
             I found it alluring to figure out how much stuff is going unused while these are bolted to the side of a
-            train,
-            and I am stoked to try out everything there is.
+            train, and I am stoked to try out everything there is.
             Where do I go from here? I'm already working on scripts to display all kinds of fun stuff (including
-            animated
-            GIFs), and I have found a reason to learn drawing pixel art.
+            animated GIFs), and I have found a reason to learn drawing pixel art.
             Now I really want a flip dot display to go alongside this one, but it will probably be a while until I can
-            get
-            my hands on one of those.<br>
+            get my hands on one of those.<br>
             I owe a huge thanks to <a href="https://www.facebook.com/@kaNScentraal/">KaNS Centraal</a> for selling
             decommissioned train parts like this one, to <a href="https://codeberg.org/shiz">Shiz</a> for the software,
             and to everyone else on the internet who figured out the pinouts and everything else.
