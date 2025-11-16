@@ -1,83 +1,96 @@
 .defaultbody {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/bkg2.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin:40px auto;
-  max-width:950px;
-  line-height:1.6;
-  font-size:18px;
-  text-shadow: -2px 1px 5px #313131;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/bkg2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 40px auto;
+    max-width: 950px;
+    line-height: 1.6;
+    font-size: 18px;
+    text-shadow: -2px 1px 5px #313131;
 }
+
 .trbody {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/bkg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin:40px auto;
-  max-width:950px;
-  line-height:1.6;
-  font-size:18px;
-  text-shadow: -2px 1px 5px #313131;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/bkg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 40px auto;
+    max-width: 950px;
+    line-height: 1.6;
+    font-size: 18px;
+    text-shadow: -2px 1px 5px #313131;
 }
 
 h1 {
-  line-height:1.2;
-  color: rgb(208, 200, 230)/*white*/;
-  font-family: arial;
+    line-height: 1.2;
+    color: rgb(208, 200, 230) /*white*/;
+    font-family: arial;
 }
+
 h2 {
-  line-height:1.2;
-  color: rgb(228, 213, 188)/*whitesmoke*/;
-  font-family: arial;
+    line-height: 1.2;
+    color: rgb(228, 213, 188) /*whitesmoke*/;
+    font-family: arial;
 }
+
 h3 {
-  line-height:1.2;
-  color: rgb(241, 242, 238)/*whitesmoke*/;
-  font-family: Helvetica;
+    line-height: 1.2;
+    color: rgb(241, 242, 238) /*whitesmoke*/;
+    font-family: Helvetica;
+}
+
+h4 {
+    line-height: 1.2;
+    color: rgb(241, 242, 238) /*whitesmoke*/;
+    font-family: Helvetica;
 }
 
 p {
-  color: rgb(208, 200, 230)/*#b6f0f2*/;
-  font-family: Arial;
-  font-size: 100%;
-  text-wrap: wrap;
+    color: rgb(208, 200, 230) /*#b6f0f2*/;
+    font-family: Arial;
+    font-size: 100%;
+    text-wrap: wrap;
 }
 
 li {
-  color: rgb(208, 200, 230)/*#b6f0f2*/;
-  font-family: Arial;
-  font-size: 100%;
-  text-wrap: wrap;
+    color: rgb(208, 200, 230) /*#b6f0f2*/;
+    font-family: Arial;
+    font-size: 100%;
+    text-wrap: wrap;
 }
 
 summary {
-  color: rgb(208, 200, 230)/*#b6f0f2*/;
-  font-family: Arial;
-  font-size: 100%;
-  text-wrap: wrap;
+    color: rgb(208, 200, 230) /*#b6f0f2*/;
+    font-family: Arial;
+    font-size: 100%;
+    text-wrap: wrap;
 }
 
 a:link {
-  color: rgb(195, 124, 179)/*#22a3ce*/;
-  background-color: transparent;
-  text-decoration: underline;
+    color: rgb(195, 124, 179) /*#22a3ce*/;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 a:visited {
-  color: rgb(219, 163, 206)/*powderblue*/;
-  background-color: transparent;
-  text-decoration: none;
+    color: rgb(219, 163, 206) /*powderblue*/;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:hover {
-  color: rgb(231, 194, 222)/*blue*/;
-  background-color: transparent;
-  text-decoration: underline;
+    color: rgb(231, 194, 222) /*blue*/;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 a:active {
-  color: rgb(231, 194, 222)/*blue*/;
-  background-color: transparent;
-  text-decoration: none;
+    color: rgb(231, 194, 222) /*blue*/;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-
+code {
+    color: rgb(255, 255, 255) /*#b6f0f2*/;
+    font-size: 100%;
+    text-wrap: wrap;
+}
