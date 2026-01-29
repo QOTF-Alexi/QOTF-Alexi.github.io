@@ -44,21 +44,7 @@ h4 {
     font-family: Helvetica;
 }
 
-p {
-    color: rgb(208, 200, 230) /*#b6f0f2*/;
-    font-family: Arial;
-    font-size: 100%;
-    text-wrap: wrap;
-}
-
-li {
-    color: rgb(208, 200, 230) /*#b6f0f2*/;
-    font-family: Arial;
-    font-size: 100%;
-    text-wrap: wrap;
-}
-
-summary {
+p, pre, li, summary {
     color: rgb(208, 200, 230) /*#b6f0f2*/;
     font-family: Arial;
     font-size: 100%;
