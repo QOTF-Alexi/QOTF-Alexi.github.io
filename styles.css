@@ -44,7 +44,7 @@ h4 {
     font-family: Helvetica;
 }
 
-p, pre, li, summary {
+p, pre, li, summary, table, th, td {
     color: rgb(208, 200, 230) /*#b6f0f2*/;
     font-family: Arial;
     font-size: 100%;

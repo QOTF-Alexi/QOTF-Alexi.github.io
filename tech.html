@@ -290,6 +290,129 @@
     </p>
 </div>
 
+<div id="hondekopdigital">
+    <!-- Piko Hondekop digitalisation -->
+    <h2>Piko Hondekop digitalisation</h2>
+    <p>
+        I got into model railroading and my boyfriend gave me a PIKO Mat'54, also known as Hondekop.
+        This is my first good condition trainset, but first I had to make it digital. Thankfully, it's quite easy to do.
+        If you don't care about fancy lights or realistic acceleration/deceleration, you can just plop in any decoder
+        and don't configure anything, aside from maybe the ID.
+        I do care about that, so I got to modifying the parameters and electronics as well.
+        I wanted a parking light and shunting lights,
+        but you cannot switch the front and rear lights separately as it came from the factory.
+        So what I ended up doing was desoldering the wires for the unpowered vestibule and connecting the white lights
+        on that side to AUX1 (on the PCB) and the red lights to AUX2 (on a separate cable coming off the decoder).
+        That way only the white lights on the front are connected to FL and the red lights to RL.
+        With that done, I had to program it so that the F0 (automatic direction switching front and rear light) switched
+        over correctly and I had to implement the parking- and shunting lights.
+        I also adjusted the light intensity, acceleration and deceleration speeds.<br>
+        I came up with the following tables for the Train O Matic Lokommander II Mini NEM658:
+    </p>
+    <details>
+        <summary>CV programming list</summary>
+        <!-- Yes I know this is deprecated, sue me -->
+        <table border="1" cellpadding="6" cellspacing="0">
+            <tr>
+                <th>CV</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>55</td>
+            </tr>
+
+            <tr>
+                <td>33</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>5</td>
+            </tr>
+
+            <tr>
+                <td>48</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </details>
+    <details>
+        <summary>Function list</summary>
+        <table border="1" cellpadding="6" cellspacing="0">
+            <tr>
+                <th>Function Key</th>
+                <th>Function</th>
+            </tr>
+            <tr>
+                <td>F0</td>
+                <td>Front and Rear Lighting</td>
+            </tr>
+            <tr>
+                <td>F1</td>
+                <td>Parking Light</td>
+            </tr>
+            <tr>
+                <td>F2</td>
+                <td>Shunting Light</td>
+            </tr>
+            <tr>
+                <td>F3</td>
+                <td>Shunting Speed</td>
+            </tr>
+            <tr>
+                <td>F4</td>
+                <td>Acceleration/Deceleration Off</td>
+            </tr>
+        </table>
+    </details>
+
+</div>
+
 <div id="footer"></div>
 
 <script src="scripts/footer.js"></script>
